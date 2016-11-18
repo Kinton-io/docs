@@ -4,8 +4,6 @@
 
 Para poder conectar dispositivos que, en principio, no son compatibles con la arquitectura de *Kinton* se puede utilizar un elemento intermedio que actúe como intermediario entre el _broker_ y el dispositivo incompatible. 
 
-{nbsp}
-
 .Conexión de dispositivos incompatibles a Kinton
 image::kinton_hub_1.png[align="center"]
 {nbsp}
