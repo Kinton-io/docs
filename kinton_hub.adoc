@@ -1,4 +1,4 @@
-= Kinton Hub
+= Dispositivos incompatibles con Kinton
 
 *Kinton* usa *MQTT* para la comunicación entre los dispositivos y aplicaciones con el _broker_, sin embargo, no todos los dispositivos son capaces de usar *MQTT* o, simplemente, son dispositivos cuyo _firmware_ no puede ser modificado para que sea compatible con *Kinton*.
 
@@ -9,3 +9,5 @@ image::kinton_hub_1.png[align="center"]
 {nbsp}
 
 El elemento que se encarga de hacer de intermediario debe usar *MQTT* para la comunicación con *Kinton* y tener la capacidad de comunicarse con el dispositivo en cuestión usando el protocolo pertinente.
+
+Idealmente, el elemento intermedio debe actuar de la forma menos invasiva posible, esto es, simular la existencia de un dispositivo *Kinton* por cada dispositivo incompatible que exista. Esto quiere decir que el intermediario debe 
