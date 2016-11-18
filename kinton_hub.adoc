@@ -4,10 +4,14 @@
 
 Para poder conectar dispositivos que, en principio, no son compatibles con la arquitectura de *Kinton* se puede utilizar un elemento intermedio que actúe como intermediario entre el _broker_ y el dispositivo incompatible. 
 
+El elemento que se encarga de hacer de intermediario debe usar *MQTT* para la comunicación con *Kinton* y tener la capacidad de comunicarse con el dispositivo en cuestión usando el protocolo pertinente.
+
+Idealmente, el elemento intermedio debe actuar de la forma menos invasiva posible, esto es, simular la existencia de un dispositivo *Kinton* por cada dispositivo incompatible que exista. Esto quiere decir que el intermediario debe realizar un proceso de registro en nombre del dispositivo incompatible y posteriormente suscribirse a los _topics_ necesarios para recibir los mensajes en nombre del dispositivo y reenviarlos. También deberá publicar en los _topics_ en nombre del dispositivo.
+
+== Kinton Hub
+
+*Kinton Hub* es una herramienta para crear intermediarios entre *Kinton* y dispositivos incompatibles.
+
 .Conexión de dispositivos incompatibles a Kinton
 image::kinton_hub_1.png[align="center"]
 {nbsp}
-
-El elemento que se encarga de hacer de intermediario debe usar *MQTT* para la comunicación con *Kinton* y tener la capacidad de comunicarse con el dispositivo en cuestión usando el protocolo pertinente.
-
-Idealmente, el elemento intermedio debe actuar de la forma menos invasiva posible, esto es, simular la existencia de un dispositivo *Kinton* por cada dispositivo incompatible que exista. Esto quiere decir que el intermediario debe 
