@@ -7,6 +7,6 @@ Para poder conectar dispositivos que, en principio, no son compatibles con la ar
 ---
 .Conexión de dispositivos incompatibles a Kinton
 image::kinton_hub_1.png[align="center"]
----
+----
 
 El elemento que se encarga de hacer de intermediario debe usar *MQTT* para la comunicación con *Kinton* y tener la capacidad de comunicarse con el dispositivo en cuestión usando el protocolo pertinente.
