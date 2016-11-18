@@ -16,4 +16,6 @@ Idealmente, el elemento intermedio debe actuar de la forma menos invasiva posibl
 image::kinton_hub_1.png[align="center"]
 {nbsp}
 
-El objetivo de este _framework_ es permitir al desarrollador centrarse en la comunicación con el dispositivo incompatible y no tener que preocuparse de cómo comunicarse con *Kinton* (proceso de registro, publicación y suscripción, etc.). 
+El objetivo de este _framework_ es permitir al desarrollador centrarse en la comunicación con el dispositivo incompatible y no tener que preocuparse de cómo comunicarse con *Kinton* (proceso de registro, publicación y suscripción, etc.).
+
+Actualmente la herramienta está desarrollada en *Rust* pero en un futuro se podrá usar también *Lua*.
