@@ -1,6 +1,6 @@
 = Kinton Hub
 
-Como ya se ha visto, *Kinton* usa *MQTT* para la comunicación entre los dispositivos y aplicaciones con el _broker_, sin embargo, no todos los dispositivos son capaces de usar *MQTT* o, simplemente, son dispositivos cuyo _firmware_ no puede ser modificado para que sea compatible con *Kinton*.
+*Kinton* usa *MQTT* para la comunicación entre los dispositivos y aplicaciones con el _broker_, sin embargo, no todos los dispositivos son capaces de usar *MQTT* o, simplemente, son dispositivos cuyo _firmware_ no puede ser modificado para que sea compatible con *Kinton*.
 
 Para poder conectar dispositivos que, en principio, no son compatibles con la arquitectura de *Kinton* se puede utilizar un elemento intermedio que actúe como intermediario entre el _broker_ y el dispositivo incompatible. 
 
