@@ -4,7 +4,7 @@ Como ya se ha visto, *Kinton* usa *MQTT* para la comunicación entre los disposi
 
 Para poder conectar dispositivos que, en principio, no son compatibles con la arquitectura de *Kinton* se puede utilizar un elemento intermedio que actúe como intermediario entre el _broker_ y el dispositivo incompatible. 
 
-
+```flow
 st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End|future:>http://www.google.com
 op1=>operation: My Operation|past
@@ -20,4 +20,4 @@ cond(yes, right)->c2
 cond(no)->sub1(left)->op1
 c2(yes)->io->e
 c2(no)->op2->e
-
+```
